@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Mini Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div><strong>MonSite</strong></div>
+        <div>
+            <a href="#apropos">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <p>Je suis un futur développeur web passionné ! 🚀</p>
+        <button onclick="direBonjour()">Clique pour dire bonjour</button>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projet">
+            <h3>Projet 1</h3>
+            <p>Mon premier projet web ! Une page simple et propre.</p>
+        </div>
+        <button onclick="afficherInfos()">Afficher infos dans la console</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="formulaireContact" onsubmit="envoyerMessage(event)">
+            <label for="nom">Ton Nom :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="message">Ton Message :</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 - Mon Mini Site
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
